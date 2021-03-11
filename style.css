@@ -1,0 +1,618 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    width: 100%;
+    height: 130vh;
+}
+
+.blue{
+    background-image: linear-gradient(to bottom right, #636363, #090909);
+    height: 140vh;
+    width: 90%;
+    margin-top: 5vh;
+    margin-left: 5%;
+    border-radius: 10px;
+    position: relative;
+}
+.ivar{
+    background-image: url("./img/wallpaperjess.jpg");
+    height: 110vh;
+    width: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 5%;
+    margin-top: 10vh;
+    position: absolute;
+    border-radius: 20px;
+
+}
+
+/*NAV*/
+nav{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.nav-left{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+.nav-left .fas{
+    width: 40px;
+    height: 40px;
+    padding-top: 20px;
+    padding-left: 30px;
+    color: gold;
+    font-size: 45px;
+}
+.nav-left h1{
+    color: gold;
+    font-family: sans-serif;
+}
+.nav-middle{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    font-size: 15px;
+
+}
+
+.nav-middle a{
+    text-decoration: none;
+
+}
+.nav-middle li{
+    text-decoration: none;
+    list-style: none;
+    color: gold;
+    font-family: sans-serif;
+    transition: 40ms ease;
+}
+.nav-middle li:hover{
+    transform: scale(1.2);
+    border-bottom: 3px solid #200F10;
+    padding-bottom: 3px;
+}
+.nav-end{
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+.nav-end .fas{
+    color: gold;
+    padding-top: 10px;
+}
+.nav-end img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding-top: 0px;
+}
+hr{
+    color: gold;
+    margin-top: -13px;
+    filter: blur(1px);
+}
+
+/*MAIN*/
+.main{
+    width: 100%;
+    display: flex;
+}
+.down-left{
+    width: 50%;
+    margin-left: 50px;
+    padding-top: -10px;
+    
+}
+.down-left h1{
+    color: gold;
+    font-size: 50px;
+    font-family: sans-serif;
+    padding-left: 40px;
+    transition: 30ms ease;
+
+}
+.down-left h1:hover{
+    transform: scale(1.1);
+    border-bottom: 2px solid whitesmoke;
+    padding-bottom: 2px;
+}
+
+
+.down-left span{
+    border-bottom: 1px solid whitesmoke;
+    padding-bottom: 4px;
+}
+.down-left p{
+    padding-left: 40px;
+    color: gold;
+    font-size: 17px;
+    font-family: sans-serif;
+}
+/*STYLING LISTS*/
+ol{
+    list-style: none;
+    counter-reset: list-number 0;
+    
+}
+ol li{
+    counter-increment: list-number 1;
+}
+ol li::before {
+    content: counter(list-number) ". ";
+    color: white;
+    font-weight: bold;
+}
+li{
+    color: gold;
+}
+/*BUTTONS*/
+.butt{
+    padding-left: 40px;
+   
+
+}
+.see{
+    padding: 10px 40px;
+    background-color: gold;
+    color: black;
+    font-family: sans-serif;
+    font-size: 13px;
+    border-style: none;
+    border-radius: 24px;
+    transition: 25ms ease-out;
+}
+.see:hover{
+    transform: scale(1.1);
+}
+.play{
+    padding: 10px 40px;
+    background-color: transparent;
+    color: gold;
+    font-family: sans-serif;
+    font-size: 13px;
+    border-color: black;
+    border-radius: 24px;
+    margin-left: 20px;
+    transition: 25ms ease-in;
+}
+.play:hover{
+    transform: scale(1.1);
+    
+}
+.down-right{
+    width: 50%;
+}
+.down-right img{
+    width: 400px;
+    height: 280px;
+    position: relative;
+    padding-top: 40px;
+    padding-left: 40px;
+    border-radius: 70px 59px 30px 60px;
+}
+.down-right-writings{
+    position: absolute;
+    margin-top: -200px;
+    margin-left: 60px;
+    color: gold;  
+}
+.down-right-writings h1{
+    transition: 30ms ease;
+}
+.down-right-writings h1:hover{
+    transform: scale(1.1);
+    border-bottom: 2px solid whitesmoke;
+    padding-bottom: 2px;
+}
+#yellow{
+    color: gold;
+}
+.date{
+    display: flex;
+    gap: 50px;
+}
+/*ART*/
+.art{
+    display: flex;
+    padding-top: 10px;
+    width: 100%;
+}
+.lefty{
+    width: 50%;
+
+}
+.lefty p{
+    padding-left: 100px;
+    margin-top: -5px;
+    font-family: sans-serif;
+    font-size: 17px;
+    color: gold;
+    transition: 30ms ease;
+}
+.lefty p:hover{
+    transform: scale(1.2);
+    
+
+}
+.righty{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+.righty .fas{
+    margin-top: -3px;
+    padding-right: 100px;
+    font-size: 30px;
+    color: gold;
+        
+}
+/*BOTTOM*/
+.bottom{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    margin-top: 30px;
+    gap: 4%;
+}
+.bottom-left{
+    background-color: rgba(0,0, 0, 0.5);
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    margin-left: 30px;
+    
+}
+/*VIKINGS SQUAD*/
+.squad{
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+.squad img{
+    height: 120px;
+    padding-top: 12px;
+    padding-left: 10px;
+    border-radius: 20px 20px 5px 20px;
+    transition: 25ms ease-in;
+}
+.squad img:hover{
+    transform: scale(1.1);
+}
+.vikings-squad{
+    padding-left: 10px;
+    margin-top: 10px;
+}
+.vikings-squad h1{
+    font-size: 22px;
+    color: gold;
+    font-family: sans-serif;
+    transition: 25ms ease-in;
+}
+.vikings-squad h1:hover{
+    transform: scale(1.1);
+}
+.vikings-squad p{
+    color: gold;
+    font-family: sans-serif;
+    font-size: 13px;
+}
+.vikings-squad span{
+    border-bottom: 1px solid whitesmoke;
+    padding-bottom: 3px;
+}
+.v-box{
+    display: flex;
+    gap: 5px;
+    transition: 25ms ease-in;
+}
+.v-box:hover{
+    transform: scale(1.1);
+}
+.one{
+    width: 10px;
+    height: 10px;
+    background-color: gold;
+}
+.two{
+    width: 10px;
+    height: 10px;
+    background-color: gold ;
+}
+.three{
+    width: 10px;
+    height: 10px;
+    background-color: gold;
+}
+.four{
+    width: 10px;
+    height: 10px;
+    background-color: gold;
+}
+.five{
+    width: 10px;
+    height: 10px;
+    background-color: gold ;
+}
+.six{
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0,0, 0, 0.7);
+}
+.seven{
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0,0, 0, 0.7);
+}
+.eight{
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0,0, 0, 0.7);
+}
+.nine{
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0,0, 0, 0.7);
+}
+.ten{
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0,0, 0, 0.7);
+}
+.v-box h1{
+    margin-top: -10px;
+    font-size: 25px;
+    font-family: sans-serif;
+    color: gold;
+}
+.squad .fas{
+    font-size: 20px;
+    color: gold;
+    margin-top: 5px;
+    margin-left: -15px;
+}
+
+
+.bottom-middle{
+    background-color: rgba(0,0, 0, 0.5);
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+}
+/*RESIVERS*/
+.resivers{
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+.resivers img{
+    height: 120px;
+    padding-top: 12px;
+    padding-left: 10px;
+    border-radius: 20px 20px 5px 20px;
+    transition: 25ms ease-in;
+}
+.resivers img:hover{
+    transform: scale(1.1);
+}
+.vikings-resivers{
+    padding-left: 10px;
+    margin-top: -10px;
+}
+.vikings-resivers h1{
+    font-size: 22px;
+    color: gold;
+    font-family: sans-serif;
+    transition: 25ms ease-in;
+}
+.vikings-resivers h1:hover{
+    transform: scale(1.1);
+
+}
+.vikings-resivers p{
+    color: gold;
+    font-family: sans-serif;
+    font-size: 13px;
+}
+.vikings-resivers span{
+    border-bottom: 1px solid whitesmoke;
+    padding-bottom: 3px;
+}
+.r-box{
+    display: flex;
+    gap: 5px;
+    transition: 25ms ease-in;
+}
+.r-box:hover{
+    transform: scale(1.1);
+}
+.oneone{
+    width: 10px;
+    height: 10px;
+    background-color: gold ;
+}
+.twotwo{
+    width: 10px;
+    height: 10px;
+    background-color: gold ;
+}
+.threethree{
+    width: 10px;
+    height: 10px;
+    background-color: gold ;
+}
+.fourfour{
+    width: 10px;
+    height: 10px;
+    background-color: gold;
+}
+.fivefive{
+    width: 10px;
+    height: 10px;
+    background-color: gold ;
+}
+.sixsix{
+    width: 10px;
+    height: 10px;
+    background-color: gold;
+}
+.sevenseven{
+    width: 10px;
+    height: 10px;
+    background-color: gold;
+}
+.eighteight{
+    width: 10px;
+    height: 10px;
+    background-color: gold;
+}
+.ninenine{
+    width: 10px;
+    height: 10px;
+    background-color: gold;
+}
+.tenten{
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0,0, 0, 0.7)
+}
+.r-box h1{
+    margin-top: -10px;
+    font-size: 25px;
+    font-family: sans-serif;
+    color: gold;
+}
+.resivers .fas{
+    font-size: 20px;
+    color: gold;
+    margin-top: 5px;
+    margin-left: -15px;
+}
+
+
+.bottom-right{
+    background-color: rgba(0,0, 0, 0.5);
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+/*MEMORYS*/
+.memorys{
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+.memorys img{
+    height: 120px;
+    padding-top: 12px;
+    padding-left: 10px;
+    border-radius: 20px 20px 5px 20px;
+    transition: 25ms ease-in;
+}
+.memorys img:hover{
+    transform: scale(1.1);
+}
+.vikings-memorys{
+    padding-left: 10px;
+    margin-top: -10px;
+}
+.vikings-memorys h1{
+    font-size: 22px;
+    color: gold;
+    font-family: sans-serif;
+    transition: 25ms ease-in;
+}
+.vikings-memorys h1:hover{
+    transform: scale(1.1);
+}
+.vikings-memorys p{
+    color: gold;
+    font-family: sans-serif;
+    font-size: 13px;
+}
+.vikings-memorys span{
+    border-bottom: 1px solid whitesmoke;
+    padding-bottom: 3px;
+}
+.m-box{
+    display: flex;
+    gap: 5px;
+    transition: 25ms ease-in;
+}
+.m-box:hover{
+    transform: scale(1.1);
+}
+.oneonem{
+    width: 10px;
+    height: 10px;
+    background-color: gold ;
+}
+.twotwom{
+    width: 10px;
+    height: 10px;
+    background-color: gold ;
+}
+.threethreem{
+    width: 10px;
+    height: 10px;
+    background-color: gold ;
+}
+.fourfourm{
+    width: 10px;
+    height: 10px;
+    background-color: gold ;
+}
+.fivefivem{
+    width: 10px;
+    height: 10px;
+    background-color: gold ;
+}
+.sixsixm{
+    width: 10px;
+    height: 10px;
+    background-color: gold;
+}
+.sevensevenm{
+    width: 10px;
+    height: 10px;
+    background-color: gold;
+}
+.eighteightm{
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0,0, 0, 0.7);
+}
+.nineninem{
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0,0, 0, 0.7);
+}
+.tentenm{
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0,0, 0, 0.7)
+}
+.m-box h1{
+    margin-top: -10px;
+    font-size: 25px;
+    font-family: sans-serif;
+    color: gold;
+}
+.memorys .fas{
+    font-size: 20px;
+    color: gold;
+    margin-top: 5px;
+    margin-left: -15px;
+}
